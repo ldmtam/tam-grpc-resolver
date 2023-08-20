@@ -4,6 +4,8 @@ gRPC name resolver by using kubernetes API that watches namespace and label to r
 ### Usage
 
 ```
+import _ "github.com/ldmtam/tam-grpc-resolver" // don't forget to import the resolver
+
 conn, err := grpc.DialContext(
 	context.TODO(),
 	"tam:///calculator-server.default:8080",
